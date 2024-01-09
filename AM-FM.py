@@ -1,5 +1,7 @@
 import streamlit as st
 import numpy as np
+import matplotlib.pyplot as plt
+from PIL import Image
 
 # Modulasi Amplitudo
 def modulasi_amplitudo(amplitudo_informasi, frekuensi_informasi, amplitudo_pembawa, frekuensi_pembawa, t):
@@ -153,8 +155,6 @@ def main():
     image_path = "RumusFM_dan_AM.png"
     image = Image.open(image_path)
     st.image(image, caption="Modulation Formulas", use_column_width=True)
-
-matplotlib.use('Agg')
 
 if __name__ == "__main__":
     main()
