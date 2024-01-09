@@ -156,5 +156,7 @@ def main():
     image = Image.open(image_path)
     st.image(image, caption="Modulation Formulas", use_column_width=True)
 
+matplotlib.use('Agg')
+
 if __name__ == "__main__":
     main()
